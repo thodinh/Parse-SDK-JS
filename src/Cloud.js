@@ -78,7 +78,7 @@ var DefaultController = {
     }
 
     var request = RESTController.request(
-      'POST',
+      options.method || 'POST',
       'functions/' + name,
       payload,
       requestOptions
